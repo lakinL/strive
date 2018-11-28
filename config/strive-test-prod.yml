@@ -5,6 +5,12 @@ server:
 spring:
   application:
     name: test
+    
+management:
+   endpoints: 
+     web:
+       exposure: 
+         include: hystrix.stream 
 
 eureka:
   client:
